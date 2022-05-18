@@ -30,26 +30,25 @@
 =>  Prompt() condition doesn't work in vscode,it only works with browsers.
 */
 
-
-
-let a = 5;
-let b = 10;
-let sign = parseInt
-if(sign == '+'){
+function calculator(a, b, sign){
+if(sign == "+"){
     c=a+b;   
 }
-else if(sign == '-'){
+else if(sign == "-"){
     c=a-b;
 }
-else if(sign == '*'){
+else if(sign == "*"){
     c=a*b;
     
 }
-else if(sign == '/'){
+else if(sign == "/"){
     c=a/b;
 }
 else{
     console.log("invalid statement");
 }
-
 console.log(`${a} ${sign} ${b} = ${c}`);
+}
+
+
+calculator(15,30,"+");
